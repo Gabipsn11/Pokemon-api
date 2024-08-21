@@ -4,6 +4,7 @@ Bem-vindo à minha Pokédex! Este projeto utiliza a [PokéAPI](https://pokeapi.c
 
 ## 🚀 Funcionalidades
 
+
 - 🔍 Busca por nome ou ID do Pokémon.
 - 🧩 Exibe o tipo, fraquezas e evoluções dos Pokémons.
 - 🌍 Mostra a geração do Pokémon e uma breve descrição.
@@ -18,6 +19,14 @@ Infelizmente, não consegui alterar a descrição dos Pokémons para português 
 - CSS3
 - JavaScript
 - PokéAPI
+
+## 📷 Pré-visualização
+
+Aqui está uma pequena prévia do projeto:
+
+![Pikachu](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif)
+![Eevee](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/133.gif)
+![Jigglypuff](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/39.gif)
 
 ## 💻 Como Rodar o Projeto
 
