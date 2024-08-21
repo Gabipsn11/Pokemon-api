@@ -1,6 +1,7 @@
-# Pokédex Project 🎮
+# Projeto Pokedex 🎮
 
-Bem-vindo à minha Pokédex! Este projeto utiliza a [PokéAPI](https://pokeapi.co/) para exibir informações detalhadas sobre os Pokémons, como seus tipos, fraquezas, evoluções e muito mais. 
+Bem-vindo à minha Pokédex! Este projeto utiliza a [PokéAPI](https://pokeapi.co/) Este projeto é uma Pokédex interativa desenvolvida como parte da Atividade 1 do meu 3º período na faculdade de ADS. 
+🎓 A proposta é consumir dados de uma API pública e exibi-los em uma aplicação web.
 
 ## 🚀 Funcionalidades
 
