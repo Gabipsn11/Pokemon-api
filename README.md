@@ -6,7 +6,7 @@ Bem-vindo à minha Pokédex! Este projeto utiliza a [PokéAPI](https://pokeapi.c
 ## 🚀 Funcionalidades
 
 - 🔍 Busca por nome ou ID do Pokémon.
-- 🧩 Exibe o tipo, fraquezas e evoluções dos Pokémons.
+- 🧬 Exibe o tipo, fraquezas e evoluções dos Pokémons.
 - 🌍 Mostra a geração do Pokémon e uma breve descrição.
 
 ## 📜 Como Usar
