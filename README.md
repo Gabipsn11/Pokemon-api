@@ -39,3 +39,8 @@ Aqui está uma pequena prévia do projeto:
 1. Clone o repositório:
    ```bash
    git clone https://github.com/Gabipsn11/Pokemon-api.git
+
+##  Página do Site
+1. Acesse a API:
+ ```bash
+ gabipsn11.github.io/Pokemon-api/
