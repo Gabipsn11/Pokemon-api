@@ -25,23 +25,23 @@ body {
 }
 
 .normal { background-color: #A8A878; }
-.fogo { background-color: #F08030; }
-.água { background-color: #6890F0; }
-.elétrico { background-color: #F8D030; }
-.grama { background-color: #78C850; }
-.gelo { background-color: #98D8D8; }
-.lutador { background-color: #C03028; }
-.veneno { background-color: #A040A0; }
-.terra { background-color: #E0C068; }
-.voador { background-color: #A890F0; }
-.psíquico { background-color: #F85888; }
-.inseto { background-color: #A8B820; }
-.pedra { background-color: #B8A038; }
-.fantasma { background-color: #705898; }
-.dragão { background-color: #7038F8; }
-.noturno { background-color: #705848; }
-.metálico { background-color: #B8B8D0; }
-.fada { background-color: #EE99AC; }
+.fire { background-color: #F08030; }
+.water { background-color: #6890F0; }
+.electric { background-color: #F8D030; }
+.grass { background-color: #78C850; }
+.ice { background-color: #98D8D8; }
+.fighting { background-color: #C03028; }
+.poison { background-color: #A040A0; }
+.ground { background-color: #E0C068; }
+.flying { background-color: #A890F0; }
+.psychic { background-color: #F85888; }
+.bug { background-color: #A8B820; }
+.rock { background-color: #B8A038; }
+.ghost { background-color: #705898; }
+.dragon { background-color: #7038F8; }
+.dark { background-color: #705848; }
+.steel { background-color: #B8B8D0; }
+.fairy { background-color: #EE99AC; }
 
 .evolution-sprite {
     width: 75px;
