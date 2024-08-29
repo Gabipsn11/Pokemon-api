@@ -3,33 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokédex</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Pokémon Details</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Pokédex</h1>
-        <div class="search-bar">
-            <input type="text" id="pokemon-search" placeholder="Digite o nome ou ID do Pokémon...">
-        </div>
-        <div class="pokemon-container">
-            <h2 id="pokemon-name">Nome do Pokémon</h2>
-            <img id="pokemon-image" class="pokemon-sprite" src="" alt="Imagem do Pokémon">
-            <p id="pokemon-id"></p>
-            <div class="types-container">
-                <span id="pokemon-types"></span>
-            </div>
-            <p id="pokemon-generation"></p>
-            <p id="pokemon-biography"></p>
-            <div class="weaknesses-container">
-                <h3>Fraquezas</h3>
-                <ul id="pokemon-weaknesses"></ul>
-            </div>
-            <div class="evolutions-container">
-                <h3>Evoluções</h3>
-                <div id="pokemon-evolution-names"></div>
-            </div>
-        </div>
+    <form id="pokemon-form">
+        <input type="text" id="pokemon-input" placeholder="Digite o nome ou ID do Pokémon" />
+        <button type="submit">Buscar</button>
+    </form>
+    <div id="pokemon-details">
+        <h2 id="pokemon-name"></h2>
+        <img id="pokemon-image" src="" alt="Imagem do Pokémon" />
+        <p id="pokemon-id"></p>
+        <p id="pokemon-generation"></p>
+        <p id="pokemon-biography"></p>
+        <div id="pokemon-types"></div>
+        <ul id="pokemon-weaknesses"></ul>
+        <div id="pokemon-evolution-names"></div>
     </div>
     <script src="./script.js"></script>
 </body>
