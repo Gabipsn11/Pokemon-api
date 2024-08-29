@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #01579b;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #01579b;
+    font-size: 2em;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #01579b;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.pokemon-sprite,
+.evolution-sprite {
+    width: 96px;
+    height: 96px;
+    image-rendering: pixelated;
+    cursor: pointer;
+}
+
+.type-box {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.types-container,
+.weaknesses-container,
+.evolutions-container {
+    margin-top: 20px;
+}
+
+.evolutions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.type-box.fire {
+    background-color: #FF4422;
+}
+
+.type-box.water {
+    background-color: #3399FF;
+}
+
+.type-box.grass {
+    background-color: #78C850;
+}
+
+.type-box.electric {
+    background-color: #F8D030;
+}
+
+.type-box.ice {
+    background-color: #98D8D8;
+}
+
+.type-box.fighting {
+    background-color: #C03028;
+}
+
+.type-box.poison {
+    background-color: #A040A0;
+}
+
+.type-box.ground {
+    background-color: #E0C068;
+}
+
+.type-box.flying {
+    background-color: #A890F0;
+}
+
+.type-box.psychic {
+    background-color: #F85888;
+}
+
+.type-box.bug {
+    background-color: #A8B820;
+}
+
+.type-box.rock {
+    background-color: #B8A038;
+}
+
+.type-box.ghost {
+    background-color: #705898;
+}
+
+.type-box.dragon {
+    background-color: #7038F8;
+}
+
+.type-box.dark {
+    background-color: #705848;
+}
+
+.type-box.steel {
+    background-color: #B8B8D0;
+}
+
+.type-box.fairy {
+    background-color: #EE99AC;
+}
+
+.type-box.normal {
+    background-color: #A8A878;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .pokemon-sprite,
+    .evolution-sprite {
+        width: 64px;
+        height: 64px;
+    }
+}
