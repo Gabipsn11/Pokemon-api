@@ -1,14 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const searchInput = document.getElementById('pokemon-search');
-    searchInput.addEventListener('keydown', function (event) {
-        if (event.key === 'Enter') {
-            const pokemonIdOrName = searchInput.value.trim().toLowerCase();
-            if (pokemonIdOrName) {
-                fetchPokemonData(pokemonIdOrName);
-            }
-        }
-    });
-
     function fetchPokemonData(pokemonIdOrName) {
         fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonIdOrName}`)
             .then(response => response.json())
@@ -36,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
                                     </div>
                                 `).join('');
                                 document.getElementById('pokemon-evolution-names').innerHTML = evolutionHtml;
-
                                 document.querySelectorAll('.evolution-sprite').forEach(img => {
                                     img.addEventListener('click', function () {
                                         fetchPokemonData(img.dataset.name);
@@ -67,49 +56,53 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('Pokémon não encontrado.');
             });
     }
-    function getAllEvolutionDetails(chain, seen = new Set()) {
+
+    function getAllEvolutionDetails(chain) {
         let evolutions = [];
-        let currentChain = chain;
-        while (currentChain) {
-            const speciesId = currentChain.species.url.split('/').slice(-2, -1)[0];
-            if (!seen.has(speciesId)) {
-                seen.add(speciesId);
-                evolutions.push({
-                    name: currentChain.species.name,
-                    id: speciesId
-                });
-                if (currentChain.evolves_to.length > 0) {
-                    currentChain = currentChain.evolves_to[0];
-                } else {
-                    currentChain = null;
-                }
-            } else {
-                break;
-            }
+        function traverseEvolutionChain(chain) {
+            const speciesId = chain.species.url.split('/').slice(-2, -1)[0];
+            evolutions.push({
+                name: chain.species.name,
+                id: speciesId
+            });
+
+            chain.evolves_to.forEach(evolution => {
+                traverseEvolutionChain(evolution);
+            });
         }
+
+        traverseEvolutionChain(chain);
         return evolutions;
     }
+
     function translateType(type) {
         const typeTranslations = {
+            normal: 'Normal',
             fire: 'Fogo',
             water: 'Água',
-            grass: 'Grama',
             electric: 'Elétrico',
+            grass: 'Grama',
             ice: 'Gelo',
             fighting: 'Lutador',
-            poison: 'Venenoso',
-            ground: 'Terrestre',
+            poison: 'Veneno',
+            ground: 'Terra',
             flying: 'Voador',
             psychic: 'Psíquico',
             bug: 'Inseto',
             rock: 'Pedra',
             ghost: 'Fantasma',
             dragon: 'Dragão',
-            dark: 'Sombrio',
-            steel: 'Aço',
-            fairy: 'Fada',
-            normal: 'Normal'
+            dark: 'Noturno',
+            steel: 'Metálico',
+            fairy: 'Fada'
         };
         return typeTranslations[type] || type;
     }
+    
+    fetchPokemonData(133);
+    document.getElementById('pokemon-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const pokemonName = document.getElementById('pokemon-input').value.trim().toLowerCase();
+        fetchPokemonData(pokemonName);
+    });
 });
