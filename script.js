@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     const weaknessesList = allWeaknesses.map(weakness => `<li class="type-box ${weakness}">${translateType(weakness)}</li>`).join('');
                     document.getElementById('pokemon-weaknesses').innerHTML = weaknessesList;
                 });
+
                 document.getElementById('pokemon-types').innerHTML = typeBoxes;
             })
             .catch(error => {
@@ -98,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
         return typeTranslations[type] || type;
     }
-    fetchPokemonData(133); 
+
     document.getElementById('pokemon-form').addEventListener('submit', function (e) {
         e.preventDefault();
         const pokemonName = document.getElementById('pokemon-input').value.trim().toLowerCase();
